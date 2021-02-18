@@ -1,0 +1,276 @@
+/* Generales */
+*{
+    padding: 0px;/* Margen interior */
+    margin: 0px;/* Margen exterior */
+    font-family: sans-serif,Helvetica, Arial;
+}
+
+body{
+    /* background: url(../img/binary.png); */
+    background: rgb(240, 240, 240);
+}
+
+a{
+    color: #33c8fa;
+}
+
+a:visited{
+    color: #33c8fa;
+}
+
+a:hover{
+    color: #0094c5;
+}
+
+
+/* Menu */
+#menu{
+    clear: both;
+    background: #222;
+    color: white;
+    height: 55px;
+    border-bottom: 4px solid rgb(0, 255, 221);
+}
+
+
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-left: 25px;
+}
+
+#menu ul li{
+    line-height: 56px;
+    float: left;
+    border-left: 1px solid #363636;
+
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: all 300ms;
+}
+
+#menu a:frirst-child{
+    border-left: 1px solid #363636;
+}
+
+#menu a:hover{
+    background:rgb(0, 255, 221);
+}
+
+/* container */
+#container{
+    width: 80%;
+    margin: 0px  auto;
+    box-shadow: 0px 0px 10px #ccc;
+    background: white;
+}
+
+/*HEADER */
+#header{
+    height: 145px;
+    background: #F0F0F0;
+}
+
+#logo{
+    padding: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+#logo img{
+    height: 100px;
+    float: left;
+}
+
+#logo a{
+    float: left;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 18px;
+    margin-left: 25px;
+    text-shadow: 0px 2px 1px #ffffff31;
+    transition: all 3000ms;
+}
+
+#logo a:hover{
+    letter-spacing: 8px;
+}
+
+/* Content */
+#content{
+    margin: 0px auto;
+    overflow: hidden;
+    background: white;
+}
+
+/* aside */
+#lateral{
+    width: 23%;
+    min-height: 500px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#lateral .block_aside{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+#lateral h3{
+    display: block;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E1E1E1;
+    border-bottom:2px solid rgb(0, 255, 221);
+}
+#lateral ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lateral ul li{
+ list-style: square;
+ margin-left: 20px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+/* formularios */
+label,
+input[type="text"],
+input[type="password"],
+input[type="email"]
+select{
+    display: block;
+    width: 95%;
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 2px;
+    color:gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus{
+    border: 1px solid rgb(0, 204, 255);
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+button,
+.button{
+    display: block;
+    border-radius: 2px;
+    width: auto;
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background:rgba(0, 110, 255, 0.705);
+    border: 1px solid rgb(0, 110, 255);
+    cursor: pointer;
+}
+
+.button{
+    background: rgba(0, 110, 255, 0.705);
+    color: white !important;
+    text-decoration: none;
+}
+
+label,
+input[type="button"],
+input[type="submit"],
+button{
+    display: block;
+    margin-top: 10px;
+}
+
+/* central */
+#central{
+    width: 72%;
+    min-height: 500px;
+    float: right;
+    border-left: 1px solid #ccc;
+    box-shadow: -5px -1px 5px #ddd;
+    padding: 25px;
+}
+
+#central h1{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* Productos */
+.product{
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.product img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.product h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* footer */
+#footer{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: 5px solid rgb(0, 255, 221);
+}
