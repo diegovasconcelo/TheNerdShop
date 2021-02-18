@@ -1,85 +1,37 @@
-<!DOCTYPE html>
+<?php
+ require_once 'autoload.php';
+ require_once 'views/layout/header.php';
+ require_once 'views/layout/sidebar.php';   
 
-<html lang="es">
-    <head>
-        <meta charset="utf8"/>
-        <title>The Nerd Shop</title>
-        <link rel="stylesheet" href='assets/css/styles.css'>
-    </head>
-    <body>
-        <div id="container">
-            <header id='header'>
-                <div id="logo">
-                    <img src="assets/img/logo.png" alt="locoTNS"/>
-                    <a href="index.php">The Nerd Shop</a>
-                </div>
-            </header>
 
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.php">Incio</li>
-                    <li><a href="">Categoria1</a></li>
-                    <li><a href="">Categoria2</a></li>
-                    <li><a href="">Categoria3</a></li>
-                    <li><a href="">About us</a></li>
-                </ul>
-            </nav>
+/*
+Al hacer un autoload, no se requiere hacer un include por cada controlador.
+require_once 'controllers/UsuarioController.php';
+require_once 'controllers/NotaController.php';
+*/
 
-            <div id="content">
-                <aside id="lateral">
-                    <h3>Entrar a la web</h3>
-                    <div id="login" class="block_aside">
-                        <form action="" method="POST">
-                            <label for="email">Correo</label>
-                            <input type="text" name="email"/>
+#Esta practica que esta a continuacion se la conoce como: Controlador frontal
 
-                            <label for="password">Contraseña</label>
-                            <input type="password" name="password"/>
+if (isset($_GET['controller'])){
+    $nombre_controlador=$_GET['controller'].'Controller';
+}else{
+    echo '<h2> La pagina y el controlador que buscas no existe</h2>';
+    exit();
+}
 
-                            <input type="submit" value="Ingresar"/>
-                        </form>
-                        
-                        <ul>
-                            <li><a href="">Mis Pedidos</a></li>
-                            <li><a href="">Gestionar pedidos</a></li>
-                            <li><a href="">Gestionar categoria</a></li>
-                        </li>
-                    </div>
-                </aside>
+if (class_exists($nombre_controlador)){
+    $controlador = new $nombre_controlador();
 
-                <!--Contenido central-->
-                <div id="central">
-                    <h1>Los destacados</h1>
-                    <div class="product">
-                        <img src="assets/img/logo.png"/>
-                        <h2>Camiseta azul star wars</h2>
-                        <p>$ 380</p>
-                        <a href="" class="button">Comprar</a>
-                    </div>
-                    <div class="product">
-                        <img src="assets/img/logo.png"/>
-                        <h2>Camiseta azul star wars</h2>
-                        <p>$ 380</p>
-                        <a href="" class="button">Comprar</a>
-                    </div>
-                    <div class="product">
-                        <img src="assets/img/logo.png"/>
-                        <h2>Camiseta azul star wars</h2>
-                        <p>$ 380</p>
-                        <a href="" class="button">Comprar</a>
-                    </div>
-                    <div class="product">
-                        <img src="assets/img/logo.png"/>
-                        <h2>Camiseta azul star wars</h2>
-                        <p>$ 380</p>
-                        <a href="" class="button">Comprar</a>
-                    </div>
-                </div>
-            </div>
+    if(isset($_GET['action']) && method_exists($controlador, $_GET['action'] )){
+        $action=$_GET['action'];
+    
+        $controlador->$action();
+    }else{
+        echo '<h2> La pagina que buscas no existe</h2>';
+    }
+    
+}else{
+    echo '<h2> El controlador que buscas no existe</h2>';
+}
 
-            <footer id="footer">
-                <p>Desarrollado por DVU - <?=date('Y')?></p>
-            </footer>
-        </div>
-    </body>
-</html>
+require_once 'views/layout/footer.php';
