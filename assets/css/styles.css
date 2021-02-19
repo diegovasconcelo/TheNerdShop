@@ -22,6 +22,14 @@ a:hover{
     color: #0094c5;
 }
 
+.alert_green{
+    color:rgb(27, 133, 27);
+}
+
+.alert_red{
+    color:rgb(206, 13, 13);
+}
+
 
 /* Menu */
 #menu{
@@ -160,7 +168,7 @@ a:hover{
 label,
 input[type="text"],
 input[type="password"],
-input[type="email"]
+input[type="email"],
 select{
     display: block;
     width: 95%;
@@ -171,7 +179,7 @@ select{
 
 input[type="text"],
 input[type="password"],
-input[type="email"]
+input[type="email"],
 select{
     border: 1px solid #c9c9c9;
     box-shadow: 0px 0px 2px #ccc inset;

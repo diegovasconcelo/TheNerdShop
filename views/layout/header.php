@@ -5,14 +5,14 @@
 <head>
     <meta charset="utf8" />
     <title>The Nerd Shop</title>
-    <link rel="stylesheet" href='./assets/css/styles.css'>
+    <link rel="stylesheet" href='<?=base_url?>assets/css/styles.css'>
 </head>
 
 <body>
     <div id="container">
         <header id='header'>
             <div id="logo">
-                <img src="assets/img/logo.png" alt="locoTNS" />
+                <img src="<?=base_url?>assets/img/logo.png" alt="locoTNS" />
                 <a href="index.php">The Nerd Shop</a>
             </div>
         </header>
