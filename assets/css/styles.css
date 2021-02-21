@@ -30,6 +30,21 @@ a:hover{
     color:rgb(206, 13, 13);
 }
 
+table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgb(77, 75, 75);
+}
+
+td{
+    border-top: 1px solid rgb(122, 122, 122);
+    padding: 2px;
+}
+
+.thumb{
+    width: 100px;
+}
+
 
 /* Menu */
 #menu{
@@ -165,11 +180,18 @@ a:hover{
 }
 
 /* formularios */
+.form_container{
+    width: 50%;
+}
+
 label,
 input[type="text"],
 input[type="password"],
 input[type="email"],
-select{
+input[type="number"],
+input[type="file"],
+select,
+textarea{
     display: block;
     width: 95%;
     margin-top:2px;
@@ -180,7 +202,9 @@ select{
 input[type="text"],
 input[type="password"],
 input[type="email"],
-select{
+input[type="number"],
+select,
+textarea{
     border: 1px solid #c9c9c9;
     box-shadow: 0px 0px 2px #ccc inset;
     background: white;
@@ -216,6 +240,27 @@ button,
     background: rgba(0, 110, 255, 0.705);
     color: white !important;
     text-decoration: none;
+}
+.btn-small{
+    width: 120px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.button-gestion{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-red{
+    background: rgb(206, 13, 13);
+    border-color: rgb(223, 11, 11);
+}
+
+
+.button-green{
+    background: rgb(27, 133, 27);
+    border-color: rgb(24, 163, 24);
 }
 
 label,

@@ -16,13 +16,13 @@
                 <a href="index.php">The Nerd Shop</a>
             </div>
         </header>
-
+        <?php $categorias= Utils::showCategorias();?>
         <nav id="menu">
             <ul>
                 <li><a href="index.php">Incio</li>
-                <li><a href="">Categoria1</a></li>
-                <li><a href="">Categoria2</a></li>
-                <li><a href="">Categoria3</a></li>
+                <?php while($cat=$categorias->fetch_object()):?>
+                    <li><a href="#"><?=$cat->nombre;?></a></li>
+                <?php endwhile;?>
                 <li><a href="">About us</a></li>
             </ul>
         </nav>
