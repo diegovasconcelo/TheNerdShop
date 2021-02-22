@@ -33,11 +33,11 @@ a:hover{
 table{
     text-align: center;
     width: 100%;
-    border: 1px solid rgb(77, 75, 75);
+    border: 1px solid rgba(158, 157, 157, 0.445);
 }
 
 td{
-    border-top: 1px solid rgb(122, 122, 122);
+    border-top: 1px solid rgb(102, 102, 102, 0.445);
     padding: 2px;
 }
 
@@ -343,6 +343,12 @@ button{
     float: left;
 }
 
+.img_carrito{
+    height: 70px;
+    display: block;
+    margin: 10px auto;
+}
+
 #detail-product .data{
     width: 50%;
     float: right;
@@ -374,4 +380,25 @@ button{
     color: white;
     background: #222222;
     border-top: 5px solid rgb(0, 255, 221);
+}
+
+.footer-carrito{
+    float: right;
+    padding-top: 10px;
+    width: 300px;
+}
+
+.footer-carrito h3{
+    display: block;
+    float: left;
+    padding-top: 5px;
+}
+
+.button-pedido{
+    display: block;
+    float: right;
+    width: 150px;
+    text-align: center;
+    background-color: rgb(73, 170, 29) !important;
+    border-color: rgb(85, 146, 25)  !important;;
 }
