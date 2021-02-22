@@ -13,17 +13,17 @@
         <header id='header'>
             <div id="logo">
                 <img src="<?=base_url?>assets/img/logo.png" alt="locoTNS" />
-                <a href="index.php">The Nerd Shop</a>
+                <a href="<?=base_url?>">The Nerd Shop</a>
             </div>
         </header>
         <?php $categorias= Utils::showCategorias();?>
         <nav id="menu">
             <ul>
-                <li><a href="index.php">Incio</li>
+                <li><a href="<?=base_url?>">Incio</li>
                 <?php while($cat=$categorias->fetch_object()):?>
-                    <li><a href="#"><?=$cat->nombre;?></a></li>
+                    <li><a href="<?=base_url?>categoria/ver&id=<?=$cat->id;?>"><?=$cat->nombre;?></a></li>
                 <?php endwhile;?>
-                <li><a href="">About us</a></li>
+                <li><a href="<?=base_url?>">About us</a></li>
             </ul>
         </nav>
 
