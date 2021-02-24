@@ -3,6 +3,7 @@
     padding: 0px;/* Margen interior */
     margin: 0px;/* Margen exterior */
     font-family: sans-serif,Helvetica, Arial;
+    text-decoration: none;
 }
 
 body{
@@ -263,6 +264,11 @@ button,
     border-color: rgb(24, 163, 24);
 }
 
+.button-orange{
+    background: rgb(253, 152, 0);
+    border-color: rgb(253, 165, 0);
+}
+
 label,
 input[type="button"],
 input[type="submit"],
@@ -382,6 +388,25 @@ button{
     border-top: 5px solid rgb(0, 255, 221);
 }
 
+.delete-carrito{
+    float: left;
+    padding-top: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.button-delete{
+    display: block;
+    float: left;
+    width: 150px;
+}
+
+.button-carrito{
+    width: 60px;
+    margin: 0px auto;
+    text-align: center;
+}
+
 .footer-carrito{
     float: right;
     padding-top: 10px;
@@ -399,6 +424,4 @@ button{
     float: right;
     width: 150px;
     text-align: center;
-    background-color: rgb(73, 170, 29) !important;
-    border-color: rgb(85, 146, 25)  !important;;
 }
