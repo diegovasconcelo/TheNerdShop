@@ -18,7 +18,7 @@
                 <?php if(isset($producto->imagen)): ?>
                     <img class="img_carrito" src="<?=base_url?>uploads/images/<?=$producto->imagen?>"/>
                 <?php else:?>
-                    <img class="img_carrito" src="<?=base_url?>assets/img/logo.png"/>
+                    <img class="img_carrito" src="<?=base_url?>assets/img/tnsLogoL.png"/>
                 <?php endif;?>
             </td>
             <td>        

@@ -12,7 +12,7 @@
     <div id="container">
         <header id='header'>
             <div id="logo">
-                <img src="<?=base_url?>assets/img/logo.png" alt="locoTNS" />
+                <img src="<?=base_url?>assets/img/tnsLogo.png" alt="locoTNS" />
                 <a href="<?=base_url?>">The Nerd Shop</a>
             </div>
         </header>
